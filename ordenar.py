@@ -157,32 +157,51 @@
 #contar_cadena(texto)
 
 #6.6 Programa que cuente cuantas vocales hay de cada una en un texto
-def contar_vocales(texto):
-    contar_a = 0
-    contar_e = 0
-    contar_i = 0
-    contar_o = 0
-    contar_u = 0
-    for i in texto:
-        if i == 'A' or i == 'a':
-            contar_a = contar_a + 1
-        elif i == 'E' or i == 'e':
-            contar_e = contar_e + 1
-        elif i == 'I' or i == 'i':
-            contar_i = contar_i + 1
-        elif i == 'O' or i == 'o':
-            contar_o = contar_o + 1
-        elif i == 'U' or i == 'u':
-             contar_u = contar_u + 1
+#def contar_vocales(texto):
+ #   contar_a = 0
+  #  contar_e = 0
+   # contar_i = 0
+    #contar_o = 0
+    #contar_u = 0
+    #for i in texto:
+     #   if i == 'A' or i == 'a':
+      #      contar_a = contar_a + 1
+       # elif i == 'E' or i == 'e':
+        #    contar_e = contar_e + 1
+        #elif i == 'I' or i == 'i':
+         #   contar_i = contar_i + 1
+        #elif i == 'O' or i == 'o':
+         #   contar_o = contar_o + 1
+        #elif i == 'U' or i == 'u':
+         #    contar_u = contar_u + 1
 
-    print("Tenemos ",contar_a," a")
-    print("Tenemos ",contar_e," e")
-    print("Tenemos ",contar_i," i")
-    print("Tenemos ",contar_o," o")
-    print("Tenemos ",contar_u," u")
+    #print("Tenemos ",contar_a," a")
+    #print("Tenemos ",contar_e," e")
+    #print("Tenemos ",contar_i," i")
+    #print("Tenemos ",contar_o," o")
+    #print("Tenemos ",contar_u," u")
 
-texto = input("Introduzca el texto")
-contar_vocales(texto)
+#texto = input("Introduzca el texto")
+#contar_vocales(texto)
+
+#Programa que ordena elementos de una lista
+
+a = [5,3,2,4,1]
+b = []
+x = len(a)
+for i in range(x):
+    for j in range(x):
+        if a[i] < a[j]:
+            temp = a[i]
+            a[i] = a[j]
+            a[j] = temp
+print(a)
+
+
+
+
+
+
 
 
 
