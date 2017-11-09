@@ -198,6 +198,72 @@ for i in range(x):
 print(a)
 
 
+# Tuplas
+#t = (89766,"Alicia","Hacker",(9,"Julio",1988))
+#print(len(t))
+
+#Tupla unitaria
+#u =(1980,)
+#print(len(u))
+#print(u)
+
+
+#Listas
+#xs = [1,2,3,4,5,6,7]
+
+#agregar
+#xs.append(20)
+#print(xs)
+
+#insertar
+#xs.insert(2,30)
+#print(xs)
+
+#Borrar
+#xs.remove(4)
+#print(xs)
+
+#buscar elementos
+#print(10 in xs)
+#print(2 in xs)
+
+#Posicion de un elemento de la lista
+#print(xs.index(3))
+
+#for i in xs:
+ #   print(i)
+
+
+
+#7.1 Agregar numero de Padron de matricula, validar si ya existe.
+
+xs = []
+while True:
+    padron = input("Introduzca el numero de Padron(Escriba * para salir: ")
+    if padron == '*':
+        print("Adios...")
+        break
+    if padron in xs:
+        print("Error!, Padron existe , favor escribir uno nuevo....")
+
+    else:
+        xs.append(padron)
+
+if len(xs)>0:
+    print("Lista de padrones inscritos: ", xs)
+else:
+    print("No se han inscrito padrones a esta materia")
+
+
+
+
+
+
+
+
+
+
+
 
 
 
