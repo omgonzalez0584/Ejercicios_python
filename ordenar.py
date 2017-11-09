@@ -250,7 +250,8 @@ while True:
         xs.append(padron)
 
 if len(xs)>0:
-    print("Lista de padrones inscritos: ", xs)
+     xs.sort()
+     print("Lista de padrones inscritos: ", xs)
 else:
     print("No se han inscrito padrones a esta materia")
 
