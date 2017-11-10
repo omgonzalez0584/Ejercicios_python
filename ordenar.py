@@ -256,6 +256,25 @@ else:
     print("No se han inscrito padrones a esta materia")
 
 
+# funcion Split para convertir una cadena en una lista
+
+c = "Hola mundo"
+print(len(c.split()))
+
+#7.9  Escribir una función que reciba como parámetro una cadena de palabras separadas por espacios y devuelva, como resultado, cuántas palabras de más de cinco letras tiene la cadena dada.
+def contar_letras(texto):
+    contador = 0
+    for i in texto.split():
+        if len(i) > 5:
+            contador = contador + 1
+
+    print("Este texto tiene",contador,"palabras con mas de 5 letras")
+
+texto = input("Introduzca el texto: ")
+contar_letras(texto)
+
+
+
 
 
 
