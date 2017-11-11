@@ -312,27 +312,38 @@
 
 #DICCIONARIOS
 
-materias = {}
-materias["lunes"] = [6103,7540]
-materias["martes"] = [6201]
-materias["miercoles"] = [6103,7540]
-materias["jueves"] = []
-materias["viernes"] = [6201]
+#materias = {}
+#materias["lunes"] = [6103,7540]
+#materias["martes"] = [6201]
+#materias["miercoles"] = [6103,7540]
+#materias["jueves"] = []
+#materias["viernes"] = [6201]
 
-print(materias["lunes"])
-print(materias["martes"])
+#print(materias["lunes"])
+#print(materias["martes"])
 
-print(materias.get("sabado"))
+#print(materias.get("sabado"))
 
 #recorrer diccionario con un for
-for dia in materias:
-    print (dia,":",materias[dia])
+#for dia in materias:
+ #   print (dia,":",materias[dia])
 
 #usando tuplas
-print("Desplegar como tuplas")
-for dia , codigos in materias.items():
-    print(dia,":",codigos)
+#print("Desplegar como tuplas")
+#for dia , codigos in materias.items():
+ #   print(dia,":",codigos)
 
+#provincias = {}
+#provincias["Panama"] = ['San Miguelito', 'Chepo', 'Panama']
+#print(provincias["Panama"])
+
+l = [('Omar',33),('Ambar',30),('Mia',6)]
+temp = 0
+for i in l:
+    print("Tupla:",temp )
+    for j in i:
+        print(j)
+    temp = temp + 1
 
 
 
