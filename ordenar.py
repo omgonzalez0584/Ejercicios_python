@@ -186,16 +186,16 @@
 
 #Programa que ordena elementos de una lista
 
-a = [5,3,2,4,1]
-b = []
-x = len(a)
-for i in range(x):
-    for j in range(x):
-        if a[i] < a[j]:
-            temp = a[i]
-            a[i] = a[j]
-            a[j] = temp
-print(a)
+#a = [5,3,2,4,1]
+#b = []
+#x = len(a)
+#for i in range(x):
+ #   for j in range(x):
+  #      if a[i] < a[j]:
+   #         temp = a[i]
+    #        a[i] = a[j]
+     #       a[j] = temp
+#print(a)
 
 
 # Tuplas
@@ -237,43 +237,101 @@ print(a)
 
 #7.1 Agregar numero de Padron de matricula, validar si ya existe.
 
-xs = []
-while True:
-    padron = input("Introduzca el numero de Padron(Escriba * para salir: ")
-    if padron == '*':
-        print("Adios...")
-        break
-    if padron in xs:
-        print("Error!, Padron existe , favor escribir uno nuevo....")
+#xs = []
+#while True:
+ #   padron = input("Introduzca el numero de Padron(Escriba * para salir: ")
+  #  if padron == '*':
+   #     print("Adios...")
+    #    break
+    #if padron in xs:
+     #   print("Error!, Padron existe , favor escribir uno nuevo....")
 
-    else:
-        xs.append(padron)
+    #else:
+     #   xs.append(padron)
 
-if len(xs)>0:
-     xs.sort()
-     print("Lista de padrones inscritos: ", xs)
-else:
-    print("No se han inscrito padrones a esta materia")
+#if len(xs)>0:
+ #    xs.sort()
+  #   print("Lista de padrones inscritos: ", xs)
+#else:
+ #   print("No se han inscrito padrones a esta materia")
 
 
 # funcion Split para convertir una cadena en una lista
 
-c = "Hola mundo"
-print(len(c.split()))
+#c = "Hola mundo"
+#print(len(c.split()))
 
 #7.9  Escribir una función que reciba como parámetro una cadena de palabras separadas por espacios y devuelva, como resultado, cuántas palabras de más de cinco letras tiene la cadena dada.
-def contar_letras(texto):
-    contador = 0
-    for i in texto.split():
-        if len(i) > 5:
-            contador = contador + 1
+#def contar_letras(texto):
+ #   contador = 0
+  #  for i in texto.split():
+   #     if len(i) > 5:
+    #        contador = contador + 1
 
-    print("Este texto tiene",contador,"palabras con mas de 5 letras")
+    #print("Este texto tiene",contador,"palabras con mas de 5 letras")
 
-texto = input("Introduzca el texto: ")
-contar_letras(texto)
+#texto = input("Introduzca el texto: ")
+#contar_letras(texto)
 
 
+
+#8.1Busqueda de una elemento de la una lista
+
+#def busqueda_lista(lista,elemento):
+ #   i = 0
+  #  for x in lista:
+   #     if x == elemento:
+    #        return i
+     #   i = i + 1
+      #  print(i)
+    #return -1
+
+
+#lista = [5,4,3,200,1,2,6,7,8,9,10,20]
+#elemento = int(input("Introduzca el elemento que deseaa buscar"))
+#print("El indice es -> ", busqueda_lista(lista,elemento))
+
+#8.1.2 Buscar elemento de una lista, pero con la lista ordenada
+
+#def busqueda_lista(lista,elemento):
+ #   i = 0
+  #  lista.sort()
+   # print("Lista ordenada",lista)
+
+    #for x in lista:
+     #   if x == elemento:
+      #      return i
+       # i = i + 1
+        #print(i)
+    #return -1
+
+
+#lista = [5,4,3,200,1,2,6,7,8,9,10,20]
+#elemento = int(input("Introduzca el elemento que desea buscar --> "))
+#print("El indice es -> ", busqueda_lista(lista,elemento))
+
+#DICCIONARIOS
+
+materias = {}
+materias["lunes"] = [6103,7540]
+materias["martes"] = [6201]
+materias["miercoles"] = [6103,7540]
+materias["jueves"] = []
+materias["viernes"] = [6201]
+
+print(materias["lunes"])
+print(materias["martes"])
+
+print(materias.get("sabado"))
+
+#recorrer diccionario con un for
+for dia in materias:
+    print (dia,":",materias[dia])
+
+#usando tuplas
+print("Desplegar como tuplas")
+for dia , codigos in materias.items():
+    print(dia,":",codigos)
 
 
 
