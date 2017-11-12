@@ -337,15 +337,33 @@
 #provincias["Panama"] = ['San Miguelito', 'Chepo', 'Panama']
 #print(provincias["Panama"])
 
-l = [('Omar',33),('Ambar',30),('Mia',6)]
-temp = 0
-for i in l:
-    print("Tupla:",temp )
-    for j in i:
-        print(j)
-    temp = temp + 1
+#l = [('Omar',33,'Gonzalez'),('Ambar',30),('Mia',6)]
+#temp = 0
+#for i in l:
+ #   print("Tupla:",temp )
+  #  for j in i:
+   #     print(j)
+    #temp = temp + 1
 
+#9.5.1 Convertir una tupla en diccionario
 
+def tupla_a_diccionario(l2):
+    dic = {}
+    for i in l2:
+        dic[i[0]] = []
+
+    for clave in dic:
+        temp = []
+        for i in l2:
+            if clave in i:
+               for j in i:
+                   if clave not in j:
+                      temp.append(j)
+        dic[clave] = temp
+    print(dic)
+
+l2 = [('Nola','Don Pepito','Don juan'),('Nola','Don Jose'),('Buenos','Dias','Noches','Tarde'),('Omar','Don Gonzalez','Don Castillo'),('LPF','Plaza Amardor','Tauro FC','Arabe Unido')]
+print(tupla_a_diccionario(l2))
 
 
 
