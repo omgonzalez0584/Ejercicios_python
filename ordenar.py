@@ -347,23 +347,23 @@
 
 #9.5.1 Convertir una tupla en diccionario
 
-def tupla_a_diccionario(l2):
-    dic = {}
-    for i in l2:
-        dic[i[0]] = []
+#def tupla_a_diccionario(l2):
+ #   dic = {}
+  #  for i in l2:
+   #     dic[i[0]] = []
 
-    for clave in dic:
-        temp = []
-        for i in l2:
-            if clave in i:
-               for j in i:
-                   if clave not in j:
-                      temp.append(j)
-        dic[clave] = temp
-    print(dic)
+    #for clave in dic:
+     #   temp = []
+      #  for i in l2:
+       #     if clave in i:
+        #       for j in i:
+         #          if clave not in j:
+          #            temp.append(j)
+        #dic[clave] = temp
+    #print(dic)
 
-l2 = [('Nola','Don Pepito','Don juan'),('Nola','Don Jose'),('Buenos','Dias','Noches','Tarde'),('Omar','Don Gonzalez','Don Castillo'),('LPF','Plaza Amardor','Tauro FC','Arabe Unido')]
-print(tupla_a_diccionario(l2))
+#l2 = [('Nola','Don Pepito','Don juan'),('Nola','Don Jose'),('Buenos','Dias','Noches','Tarde'),('Omar','Don Gonzalez','Don Castillo'),('LPF','Plaza Amardor','Tauro FC','Arabe Unido')]
+#print(tupla_a_diccionario(l2))
 
 
 #Problema 9.5.2
@@ -384,6 +384,45 @@ def texto_a_diccionario(texto):
 texto = input("Introduzca un texto: ")
 texto_a_diccionario(texto)
 
+
+#Problemaa 7.6.5
+def numeros_primos(l4):
+    lista_primos = []
+    for i in l4:
+        cont = 0
+        for j in range(i):
+            j = j + 1
+            a = i % j
+            if a == 0:
+                cont = cont +1
+
+        if cont == 2:
+            lista_primos.append(i)
+    print("Numero primos: ",lista_primos)
+
+def suma_and_promedio(l4):
+    suma = 0
+    for i in l4:
+        suma = suma + i
+    a = len(l4)
+    prom = suma / int(a)
+    print("La sumatoria es: ",suma,"y el promedio",prom)
+
+def lista_factorial(l4):
+    fact = []
+    for i in l4:
+        cont = 1
+        for j in range(i):
+            j = j + 1
+            cont = cont * j
+        fact.append(cont)
+    print("La lista de factorial es: ",fact)
+
+l4 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,]
+print("De la lista de numeros enteros: ",l4)
+numeros_primos(l4)
+suma_and_promedio(l4)
+lista_factorial(l4)
 
 
 
