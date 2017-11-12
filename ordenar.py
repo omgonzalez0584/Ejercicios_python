@@ -366,6 +366,24 @@ l2 = [('Nola','Don Pepito','Don juan'),('Nola','Don Jose'),('Buenos','Dias','Noc
 print(tupla_a_diccionario(l2))
 
 
+#Problema 9.5.2
+def texto_a_diccionario(texto):
+    l3 = texto.split()
+    dic1 = {}
+    for i in l3:
+        dic1[i] = []
+    for clave in dic1:
+        cont = 0
+        for i in l3:
+            if clave in i:
+                cont = cont + 1
+        dic1[clave] = cont
+    for clave in dic1:
+        print(clave,':',dic1[clave])
+
+texto = input("Introduzca un texto: ")
+texto_a_diccionario(texto)
+
 
 
 
