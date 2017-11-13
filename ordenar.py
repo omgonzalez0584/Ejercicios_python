@@ -398,7 +398,7 @@ def numeros_primos(l4):
 
         if cont == 2:
             lista_primos.append(i)
-    print("Numero primos: ",lista_primos)
+    return lista_primos
 
 def suma_and_promedio(l4):
     suma = 0
@@ -406,7 +406,7 @@ def suma_and_promedio(l4):
         suma = suma + i
     a = len(l4)
     prom = suma / int(a)
-    print("La sumatoria es: ",suma,"y el promedio",prom)
+    return suma,prom
 
 def lista_factorial(l4):
     fact = []
@@ -416,13 +416,16 @@ def lista_factorial(l4):
             j = j + 1
             cont = cont * j
         fact.append(cont)
-    print("La lista de factorial es: ",fact)
+    return fact
 
 l4 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,]
 print("De la lista de numeros enteros: ",l4)
-numeros_primos(l4)
-suma_and_promedio(l4)
-lista_factorial(l4)
+lista_primos = numeros_primos(l4)
+print("Numeros primos: ",lista_primos)
+resultado = suma_and_promedio(l4)
+print("La suma y el promedio es",resultado)
+factorial = lista_factorial(l4)
+print("Lista de factorial: ",factorial)
 
 
 
