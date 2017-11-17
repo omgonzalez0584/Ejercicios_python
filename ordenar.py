@@ -427,6 +427,18 @@ print("La suma y el promedio es",resultado)
 factorial = lista_factorial(l4)
 print("Lista de factorial: ",factorial)
 
+#------------------------------
+#Manejo de Archivos Ejemplo 1
+
+archivo = open("paises.txt")
+i = 1
+for linea in archivo:
+    linea = linea.rstrip("\\n")
+    print(i,linea)
+    i+=1
+archivo.close()
+
+
 
 
 
